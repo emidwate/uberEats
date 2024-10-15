@@ -4,14 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="/images/hero-section-image.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/7a9690bba4.js" crossorigin="anonymous"></script>
     <title>Uber Eats</title>
 </head>
 <body>
+    <div class="off-screen-menu">
+        <div class="off-screen-menu-actions">
+            <button class="off-screen-menu-register pointer">Zarejestruj się</button>
+            <button class="off-screen-menu-log-in pointer">Zaloguj się</button>
+        </div>
+        <ul class="off-screen-menu-list">
+            <a href="#" class="off-screen-menu-list-link">
+                <li class="off-screen-menu-list-item">Utwórz konto firmowe</li>
+            </a>
+            <a href="#" class="off-screen-menu-list-link">
+                <li class="off-screen-menu-list-item">Dodaj swoją restaurację</li>
+            </a>
+            <a href="#" class="off-screen-menu-list-link">
+                <li class="off-screen-menu-list-item">Zarejestruj się, aby realizować dostawy</li>
+            </a>
+        </ul>
+        <div class="off-screen-menu-footer">
+            <div class="off-screen-menu-footer-app">
+                <img src="/images/subhero-uber-delivery.jpg" alt="uber logo">
+                <h3 class="off-screen-menu-footer-title">W aplikacji wybór jest jeszcze większy.</h3>
+            </div>
+            <button class="off-screen-menu-footer-download-button pointer"><i class="fa-brands fa-android"></i>Pobierz aplikację</button>
+        </div>
+    </div>
+    <nav class="nav">
+        <div class="nav-ham-menu pointer">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <p class="nav-logo pointer">Uber<span class="nav-logo-bold">Eats</span></p>
+        <div class="hide-on-bigger-screen">
+            <i class="fa-solid fa-user nav-user-log-in-icon pointer"></i>
+        </div>
+        <div class="hide-on-smaller-screen">
+            <button type="button" class="nav-log-in-button pointer">Zaloguj się</button>
+        </div>
+        <button type="button" class="nav-register-button pointer">Zarejestruj się</button>
+    </nav>
     <script src="index.js" defer></script>
+    <script src="https://kit.fontawesome.com/7a9690bba4.js" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -10,9 +10,246 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Rubik", sans-serif;
 }
 
 html {
     font-size: 20px;
+    font-family: "Rubik", sans-serif;
+}
+
+/* Utility classes  */
+
+.pointer {
+    cursor: pointer;
+}
+
+.underline {
+    text-decoration: underline;
+} 
+
+/* Off screen menu */
+
+.off-screen-menu {
+    padding: 1.5rem;
+
+    height: 100vh;
+    width: 100%;
+    max-width: 15rem;
+    
+    position: fixed;
+    top: 0;
+    right: -450px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.off-screen-menu-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.off-screen-menu-register,
+.off-screen-menu-log-in {
+    padding: 0.8rem 0;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.off-screen-menu-register {
+    color: white;
+    background-color: var(--black-button-color);
+}
+
+.off-screen-menu-register:hover {
+    background-color: var(--black-button-hover-color);
+}
+
+.off-screen-menu-log-in {
+    background-color: var(--white-button-hover-color);
+}
+
+.off-screen-menu-list {
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    list-style-type: none;
+}
+
+.off-screen-menu-list-link {
+    text-decoration: none;
+}
+
+.off-screen-menu-list-item {
+    font-size: 0.8rem;
+    color: black;
+    text-decoration: none;
+}
+
+.off-screen-menu.active {
+    left: 0;
+    background-color: white;
+}
+
+/* Off screen menu footer */
+
+.off-screen-menu-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.off-screen-menu-footer-app > img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+}
+
+.off-screen-menu-footer-app {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    font-size: 0.75rem;
+}
+
+.off-screen-menu-footer-title {
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.off-screen-menu-footer-download-button {
+    width: 8.5rem;
+    padding: 0.5rem 0;
+
+    display: flex;
+    gap: 0.3rem;
+    justify-content: center;
+
+    font-size: 0.55rem;
+    font-weight: 600;
+
+    border: none;
+    border-radius: 1rem;
+}
+
+/* Navbar */
+
+.nav {
+    height: 3.2rem;
+    padding: 0.3rem 0.6rem;
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+}
+
+/* hamburger menu */
+
+.nav-ham-menu {
+    width: 2rem;
+    height: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.nav-ham-menu > div {
+    width: 1.5rem;
+    height: 0.15rem;
+    border-radius: 0.5rem;
+    background-color: #282828;
+}
+
+.nav-ham-menu:hover {
+    border-radius: 50%;
+    background-color: var(--white-button-hover-color);
+}
+
+.hide-on-smaller-screen {
+    display: none;
+}
+
+/* Logo uber eats */
+
+.nav-logo {
+    min-width: 4rem;
+    display: flex;
+    gap: 0.25rem;
+    margin-right: auto;
+}
+
+.nav-logo-bold {
+    font-weight: 600;
+}
+
+/* Nav buttons */
+
+.nav-user-log-in-icon {
+    padding: 0.35rem 0.45rem;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.nav-register-button {
+    height: 1.8rem;
+    width: 127px;
+
+    font-weight: 600;
+    font-size: 0.6rem;
+
+    border-radius: 0.8rem;
+    border: none;
+    
+    color: white;
+    background-color: var(--black-button-color);
+}
+
+.nav-register-button:hover {
+    background-color: var(--black-button-hover-color);
+}
+
+
+@media (min-width: 1200px) {
+    
+    .off-screen-menu {
+        display: none;
+    }
+
+    .nav {
+        padding: 0 1.5rem;
+        gap: 0.4rem;
+    }
+
+    .nav-ham-menu {
+        display: none;
+    }
+
+    .hide-on-bigger-screen {
+        display: none;
+    }
+    
+    .hide-on-smaller-screen {
+        display: inline;
+    }
+
+    .nav-log-in-button {
+        height: 36px;
+        width: 127px;
+        font-weight: 600;
+        font-size: 0.6rem;
+        border-radius: 0.8rem;
+        border: none;
+        color: black;
+        background-color: white;
+    }
+
+    .nav-log-in-button:hover {
+        background-color: var(--white-button-hover-color);
+    }
 }
