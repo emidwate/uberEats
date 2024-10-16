@@ -524,6 +524,8 @@ html {
 
 .footer-essentials-copyright {
     display: flex;
+    gap: 1rem;
+    flex-direction: column;
     color: grey;
     font-size: 0.6rem;
 }
@@ -712,6 +714,7 @@ html {
     }
 
     .footer-essentials-copyright {
+        flex-direction: row;
         grid-column: 1 / -1;
         justify-content: center;
         gap: 1rem;
