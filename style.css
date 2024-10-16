@@ -411,10 +411,46 @@ html {
 }
 
 .cities-link {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: black;
 }
 
+/* Countries */
+
+.countries {
+    padding: 0 1rem 1.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.countries-list {
+    margin-bottom: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem 0;
+    font-size: 0.8rem;
+}
+
+.countries-list > a {
+    color: black;
+    text-decoration: none;
+}
+
+.countries-all-cities {
+    color: black;
+    font-size: 0.8rem;
+}
+
+.countries-info {
+    font-size: 0.8rem;
+    color: grey;
+}
+
+.countries-info-link {
+    
+    color: grey;
+}
 
 /* Computer screen */
 
@@ -519,122 +555,25 @@ html {
     .cities-list {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(6, 1fr);
-        gap: 1.5rem;
+        gap: 1.5rem 0 ;
       }
-      
-      .cities-list > a:nth-child(1) {
-        grid-column: 1;
-        grid-row: 1;
-      }
-      
-      .cities-list > a:nth-child(2) {
-        grid-column: 1;
-        grid-row: 2;
-      }
-      
-      .cities-list > a:nth-child(3) {
-        grid-column: 1;
-        grid-row: 3;
-      }
-      
-      .cities-list > a:nth-child(4) {
-        grid-column: 1;
-        grid-row: 4;
-      }
-      
-      .cities-list > a:nth-child(5) {
-        grid-column: 1;
-        grid-row: 5;
-      }
-      
-      .cities-list > a:nth-child(6) {
-        grid-column: 1;
-        grid-row: 6;
-      }
-      
-      .cities-list > a:nth-child(7) {
-        grid-column: 2;
-        grid-row: 1;
-      }
-      
-      .cities-list > a:nth-child(8) {
-        grid-column: 2;
-        grid-row: 2;
-      }
-      
-      .cities-list > a:nth-child(9) {
-        grid-column: 2;
-        grid-row: 3;
-      }
-      
-      .cities-list > a:nth-child(10) {
-        grid-column: 2;
-        grid-row: 4;
-      }
-      
-      .cities-list > a:nth-child(11) {
-        grid-column: 2;
-        grid-row: 5;
-      }
-      
-      .cities-list > a:nth-child(12) {
-        grid-column: 2;
-        grid-row: 6;
-      }
-      
-      .cities-list > a:nth-child(13) {
-        grid-column: 3;
-        grid-row: 1;
-      }
-      
-      .cities-list > a:nth-child(14) {
-        grid-column: 3;
-        grid-row: 2;
-      }
-      
-      .cities-list > a:nth-child(15) {
-        grid-column: 3;
-        grid-row: 3;
-      }
-      
-      .cities-list > a:nth-child(16) {
-        grid-column: 3;
-        grid-row: 4;
-      }
-      
-      .cities-list > a:nth-child(17) {
-        grid-column: 3;
-        grid-row: 5;
-      }
-      
-      .cities-list > a:nth-child(18) {
-        grid-column: 3;
-        grid-row: 6;
-      }
-      
-      .cities-list > a:nth-child(19) {
-        grid-column: 4;
-        grid-row: 1;
-      }
-      
-      .cities-list > a:nth-child(20) {
-        grid-column: 4;
-        grid-row: 2;
-      }
-      
-      .cities-list > a:nth-child(21) {
-        grid-column: 4;
-        grid-row: 3;
-      }
-      
-      .cities-list > a:nth-child(22) {
-        grid-column: 4;
-        grid-row: 4;
-      }
-      
-      .cities-list > a:nth-child(23) {
-        grid-column: 4;
-        grid-row: 5;
-      }
-      
+    
+    .countries {
+        padding: 0 1.5rem 1.5rem 1.5rem;
+    }
+
+    .countries-list {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.5rem 0;
+    }
+
+    .countries-all-cities {
+        position: absolute;
+        right: 1.8rem;
+    }
+
+    .countries-info {
+        align-self: center;
+    }
+    
 }
