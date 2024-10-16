@@ -376,7 +376,47 @@ html {
     width: 100%;
 }
 
-/* Bigger screen */
+/* Cities */
+
+.cities {
+    padding: 0 1rem 1.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.cities-iframe {
+    width: 100%;
+    height: 450px;
+    border: none;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.cities-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-row-gap: 0.8rem;
+    font-size: 0.8rem;
+}
+
+.cities-list > a {
+    color: black;
+    text-decoration: none;
+}
+
+.cities-link {
+    font-size: 0.9rem;
+    color: black;
+}
+
+
+/* Computer screen */
 
 @media (min-width: 1200px) {
 
@@ -465,5 +505,136 @@ html {
     .subhero-container-item {
         margin-right: 1rem;
     }
-    
+
+    /* Cities */
+
+    .cities {
+        padding: 0 1.5rem 1.5rem 1.5rem;
+    }
+
+    .cities-link {
+        display: none;
+    }
+
+    .cities-list {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        gap: 1.5rem;
+      }
+      
+      .cities-list > a:nth-child(1) {
+        grid-column: 1;
+        grid-row: 1;
+      }
+      
+      .cities-list > a:nth-child(2) {
+        grid-column: 1;
+        grid-row: 2;
+      }
+      
+      .cities-list > a:nth-child(3) {
+        grid-column: 1;
+        grid-row: 3;
+      }
+      
+      .cities-list > a:nth-child(4) {
+        grid-column: 1;
+        grid-row: 4;
+      }
+      
+      .cities-list > a:nth-child(5) {
+        grid-column: 1;
+        grid-row: 5;
+      }
+      
+      .cities-list > a:nth-child(6) {
+        grid-column: 1;
+        grid-row: 6;
+      }
+      
+      .cities-list > a:nth-child(7) {
+        grid-column: 2;
+        grid-row: 1;
+      }
+      
+      .cities-list > a:nth-child(8) {
+        grid-column: 2;
+        grid-row: 2;
+      }
+      
+      .cities-list > a:nth-child(9) {
+        grid-column: 2;
+        grid-row: 3;
+      }
+      
+      .cities-list > a:nth-child(10) {
+        grid-column: 2;
+        grid-row: 4;
+      }
+      
+      .cities-list > a:nth-child(11) {
+        grid-column: 2;
+        grid-row: 5;
+      }
+      
+      .cities-list > a:nth-child(12) {
+        grid-column: 2;
+        grid-row: 6;
+      }
+      
+      .cities-list > a:nth-child(13) {
+        grid-column: 3;
+        grid-row: 1;
+      }
+      
+      .cities-list > a:nth-child(14) {
+        grid-column: 3;
+        grid-row: 2;
+      }
+      
+      .cities-list > a:nth-child(15) {
+        grid-column: 3;
+        grid-row: 3;
+      }
+      
+      .cities-list > a:nth-child(16) {
+        grid-column: 3;
+        grid-row: 4;
+      }
+      
+      .cities-list > a:nth-child(17) {
+        grid-column: 3;
+        grid-row: 5;
+      }
+      
+      .cities-list > a:nth-child(18) {
+        grid-column: 3;
+        grid-row: 6;
+      }
+      
+      .cities-list > a:nth-child(19) {
+        grid-column: 4;
+        grid-row: 1;
+      }
+      
+      .cities-list > a:nth-child(20) {
+        grid-column: 4;
+        grid-row: 2;
+      }
+      
+      .cities-list > a:nth-child(21) {
+        grid-column: 4;
+        grid-row: 3;
+      }
+      
+      .cities-list > a:nth-child(22) {
+        grid-column: 4;
+        grid-row: 4;
+      }
+      
+      .cities-list > a:nth-child(23) {
+        grid-column: 4;
+        grid-row: 5;
+      }
+      
 }
