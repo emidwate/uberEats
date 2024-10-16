@@ -70,7 +70,7 @@ html {
     background-color: var(--black-button-hover-color);
 }
 
-.off-screen-menu-log-in {
+.off-screen-menu-log-in:hover {
     background-color: var(--white-button-hover-color);
 }
 
@@ -182,7 +182,7 @@ html {
     background-color: var(--white-button-hover-color);
 }
 
-.hide-on-smaller-screen {
+.show-on-big-screen {
     display: none;
 }
 
@@ -307,20 +307,244 @@ html {
     color: black;
 }
 
-/* Bigger screen */
+/* Subhero section */
+
+.subhero {
+    padding: 1.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.subhero-download-app {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.9rem;
+}
+
+.subhero-download-image {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 10px;
+}
+
+.subhero-download-button {
+    margin-bottom: 2rem;
+    padding: 0.6rem 0.8rem;
+    
+    width: 100%;
+    height: 56px;
+    
+    display: flex;
+    justify-content: center;
+    gap: 0.3rem;
+    align-items: center;
+
+    font-size: 1rem;
+    
+    border-radius: 10px;
+    border: none;
+}
+
+.subhero-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.subhero-container-link {
+    text-decoration: none;
+}
+
+.subhero-container-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.subhero-container-item > h3 {
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.subhero-container-item > a {
+    color: black;
+}
+
+.subhero-image {
+    width: 100%;
+}
+
+/* Cities */
+
+.cities {
+    padding: 0 1rem 1.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.cities-iframe {
+    width: 100%;
+    height: 450px;
+    border: none;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.cities-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-row-gap: 0.8rem;
+    font-size: 0.8rem;
+}
+
+.cities-list > a {
+    color: black;
+    text-decoration: none;
+}
+
+.cities-link {
+    font-size: 0.8rem;
+    color: black;
+}
+
+/* Countries */
+
+.countries {
+    padding: 0 1rem 1.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.countries-list {
+    margin-bottom: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem 0;
+    font-size: 0.8rem;
+}
+
+.countries-list > a {
+    color: black;
+    text-decoration: none;
+}
+
+.countries-all-cities {
+    color: black;
+    font-size: 0.8rem;
+}
+
+.countries-info {
+    font-size: 0.8rem;
+    color: grey;
+}
+
+.countries-info-link {
+    color: grey;
+}
+
+
+/* Footer */
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: rgb(230, 229, 229);
+}
+
+.footer {
+    padding: 1rem;
+}
+
+.footer-app-store-image,
+.footer-google-play-image {
+    width: 130px;
+    height: 40px;
+    border-radius: 5px;
+    margin: 1rem 0;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    padding: 0 0 1rem 0;
+}
+
+.footer-info-first,
+.footer-info-second  {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer-info-first > a,
+.footer-info-second > a {
+    font-size: 0.8rem;
+    color: grey;
+    text-decoration: none;
+    font-size: 0.6rem;
+}
+
+.footer-info-second-language {
+    display: flex;
+    gap: 0.4rem;
+}
+
+.footer-essentials {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    padding: 1rem 0;
+    color: grey;
+    font-size: 0.6rem;
+}
+
+.footer-essentials > a {
+    color: grey;
+    text-decoration: none;
+}
+
+.footer-essentials-social-media {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.logo-footer {
+    font-size: 1.5rem;
+}
+
+.footer-essentials-copyright {
+    display: flex;
+    color: grey;
+    font-size: 0.6rem;
+}
+
+/* Computer screen */
 
 @media (min-width: 1200px) {
 
-    /* Hide on a mobile screen */
-    .hide-on-smaller-screen {
-        display: inline;
-    }
-
-    /* Show on a computer screen */
+    /* Hide user icon on a computer screen */
 
     .hide-on-bigger-screen {
         display: none;
     }
+    
+    /* Show log in button on a mobile screen */
+    
+    .show-on-big-screen {
+        display: inline;
+    }
+
 
     /* Nav bigger screen  */
     
@@ -369,5 +593,130 @@ html {
 
     .hero-search-restaurant-button {
         display: block;
+    }
+
+    /* Subhero */
+
+    .subhero-download-app {
+        display: none;
+    }
+
+    .subhero-download-button {
+        display: none;
+    }
+
+    .subhero {
+        padding: 0 0;
+    }
+    
+    .subhero-container {
+        padding: 4rem 0;
+        gap: 0;
+        flex-direction: row;
+    }
+
+    .subhero-container-item {
+        margin-right: 1rem;
+    }
+
+    /* Cities */
+
+    .cities {
+        padding: 0 1.5rem 1.5rem 1.5rem;
+    }
+
+    .cities-link {
+        display: none;
+    }
+
+    .cities-list {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        gap: 1.5rem 0 ;
+      }
+    
+    .countries {
+        padding: 0 1.5rem 1.5rem 1.5rem;
+    }
+
+    .countries-list {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.5rem 0;
+    }
+
+    .countries-all-cities {
+        position: absolute;
+        right: 1.8rem;
+    }
+
+    .countries-info {
+        align-self: center;
+        color: black;
+    }
+
+    .countries-info > a {
+        color: black;
+    }
+
+    /* Footer */
+    
+    .line {
+        grid-column: 1 / -1;
+    }
+
+    .footer {
+        padding: 4rem 0;
+        width: 1280px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .footer-download-buttons {
+        color: black;
+        grid-column: 1;
+        align-self: flex-end;
+    }
+
+    .footer-info {
+        width: 600px;
+        flex-direction: row;
+        justify-content: center;
+        grid-column: 3;
+    }
+
+    .footer-info-first > a,
+    .footer-info-second > a{
+        color: black;
+        font-size: 0.8rem;
+    }
+    .footer-info-first > a:hover, 
+    .footer-info-second > a:hover,
+    .footer-essentials > a:hover {
+        text-decoration: underline;
+    } 
+
+    .footer-essentials {
+        grid-column: 1 / -1;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .footer-essentials-social-media {
+        color: black;
+        font-size: 1rem;
+        gap: 1.5rem;
+    }
+
+    .footer-essentials > a {
+        color: black;
+        font-size: 0.8rem;
+    }
+
+    .footer-essentials-copyright {
+        grid-column: 1 / -1;
+        justify-content: center;
+        gap: 1rem;
+        color: black;
     }
 }
