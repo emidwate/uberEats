@@ -147,7 +147,7 @@ html {
     display: flex;
     gap: 0.8rem;
     align-items: center;
-    
+  
     position: fixed;
     top: 0;
     right: 0;
@@ -155,7 +155,6 @@ html {
     
     background-color: transparent;
     z-index: 1;
-}
 
 /* Hamburger menu */
 
@@ -241,7 +240,7 @@ html {
     width: 100%;
     height: 100vh;
 
-    padding: 5rem 1rem;
+    padding: 7rem 1rem;
 
     background-image: url("./images/hero-section-image.jpg");
     background-position: left center;
@@ -580,7 +579,6 @@ html {
         flex-wrap: wrap;
         flex-direction: row;
         gap: 1rem;
-        transform: translateY(-80px);
     }
 
     .hero-address-input {
