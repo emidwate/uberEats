@@ -2,16 +2,17 @@ const hamMenu = document.querySelector(".nav-ham-menu")
 const offScreenMenu = document.querySelector(".off-screen-menu")
 const addressElem = document.querySelector(".hero-subsection-address")
 const nav = document.querySelector(".nav")
-
-hamMenu.addEventListener("click", () => {
-    offScreenMenu.classList.toggle("active")
-
-    if (offScreenMenu.classList.contains("active")) {
-        document.addEventListener("click", closeMenu)
-    }
-})
+const form = document.querySelector(".form")
 
 document.addEventListener("scroll", changeNav)
+document.addEventListener("click", closeMenu)
+hamMenu.addEventListener("click", () => {
+  offScreenMenu.classList.add("active")
+})
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault()
+})
 
 function closeMenu(e) {
   if (!hamMenu.contains(e.target) && !offScreenMenu.contains(e.target)) {

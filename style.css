@@ -23,10 +23,6 @@ html {
     cursor: pointer;
 }
 
-.underline {
-    text-decoration: underline;
-} 
-
 /* Off screen menu */
 
 .off-screen-menu {
@@ -38,7 +34,7 @@ html {
     
     position: fixed;
     top: 0;
-    right: -450px;
+    left: -450px;
 
     display: flex;
     flex-direction: column;
@@ -92,7 +88,7 @@ html {
     text-decoration: none;
 }
 
-.off-screen-menu.active {
+.active {
     left: 0;
     background-color: white;
 }
