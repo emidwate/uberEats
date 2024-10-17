@@ -1,6 +1,5 @@
 const hamMenu = document.querySelector(".nav-ham-menu")
 const offScreenMenu = document.querySelector(".off-screen-menu")
-const addressElem = document.querySelector(".hero-subsection-address")
 const nav = document.querySelector(".nav")
 const form = document.querySelector(".form")
 
